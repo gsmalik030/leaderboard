@@ -1,0 +1,53 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "jest --watch",
+    "start": "webpack serve --open",
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsmalik030/leaderboard"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsmalik030/leaderboard"
+  },
+  "homepage": "https://github.com/gsmalik030/leaderboard",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.4.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
+    "gh-pages": "^4.0.0",
+    "hint": "^2.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest-environment-jsdom": "^29.4.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "jest": "^29.4.0",
+    "lodash": "^4.17.21"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
