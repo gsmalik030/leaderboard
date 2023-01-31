@@ -1,0 +1,58 @@
+html{
+  font-size: 62.5%;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.recent-score{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+ul{
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.border{
+  border: 3px solid black;
+}
+
+.add-score{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 5rem;
+}
+
+.btn{
+  width: 50%;
+}
+
+button{
+  padding: 1rem 1.5rem;
+}
+
+.even-list{
+  background-color: #DDDDDD;
+}
