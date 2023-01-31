@@ -1,36 +1,36 @@
-html{
+html {
   font-size: 62.5%;
 }
 
-*{
-margin: 0;
-padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.recent-score{
+.recent-score {
   display: flex;
   gap: 2rem;
   margin-bottom: 1.2rem;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-h3{
+h3 {
   font-size: 2rem;
 }
 
-ul{
+ul {
   list-style: none;
   font-size: 1.8rem;
 }
 
-.border{
+.border {
   border: 3px solid black;
 }
 
-.add-score{
+.add-score {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -38,21 +38,21 @@ ul{
   align-items: flex-end;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   gap: 10rem;
   padding: 5rem;
 }
 
-.btn{
+.btn {
   width: 50%;
 }
 
-button{
+button {
   padding: 1rem 1.5rem;
 }
 
-.even-list{
-  background-color: #DDDDDD;
+.even-list {
+  background-color: #ddd;
 }

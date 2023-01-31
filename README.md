@@ -56,7 +56,7 @@ Leaderboard</b></h3>
 > Describe between 1-3 key features of the application.
 
 - **[It's a website according to the design provided]**
-- **[It allows user to add or delete Tasks in todo list]**
+
 
 <!-- LIVE DEMO -->
 
