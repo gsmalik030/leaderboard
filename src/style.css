@@ -54,15 +54,15 @@ button {
 }
 
 .even-list {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
-.list{
+.list {
   display: flex;
   justify-content: space-between;
   margin: 0 1rem;
 }
 
-.index{
+.index {
   margin-right: 1rem;
 }
