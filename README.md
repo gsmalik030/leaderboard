@@ -120,7 +120,7 @@ Give a ⭐️ if you like my effort!
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-(https://github.com/gsmalik030/leaderboard/blob/main/LICENSE)
+(https://github.com/gsmalik030/leaderboard/blob/dev/LICENSE.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
