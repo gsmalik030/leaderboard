@@ -1,8 +1,7 @@
 import "./style.css";
-import { getData } from "./apiSetting";
+import { getData,order,refreshList } from "./apiSetting";
 import { postData } from "./apiSetting";
-const form=document.getElementById("form")
-
-
-form.addEventListener('submit', postData);
-console.log(getData());
+const form = document.getElementById("form");
+const refreshBtn=document.getElementById('refresh-btn');
+form.addEventListener("submit", postData);
+refreshBtn.addEventListener("click", refreshList);
