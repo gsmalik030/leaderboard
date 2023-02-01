@@ -1,0 +1,27 @@
+const api =
+  "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/YVDIUFYIURRYFHYIS/scores";
+
+const postData = async (e) => {
+    e.preventDefault();
+  const input = document.querySelectorAll("input");
+  const userData = { user: input[0].value, score: input[1].value };
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+
+    body: JSON.stringify(userData),
+  };
+  const response = fetch(api, options);
+  const data = (await response).json;
+  return data;
+};
+
+const getData = async () => {
+  const response = await fetch(api);
+  const data = await response.json();
+  return data;
+};
+
+export { postData, getData };
