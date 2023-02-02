@@ -12,21 +12,17 @@
       <div>
         <div class="recent-score">
           <h3>Recent Score</h3>
-          <button class="border">Refresh</button>
+          <button id="refresh-btn" class="border">Refresh</button>
         </div>
-        <ul class=" border">
-          <li>name:1</li>
-          <li class="even-list">name:2</li>
-          <li>name:3</li>
-          <li class="even-list">name:4</li>
-          <li>name:5</li>
+        <ul class=" border" id="score-list">
+          <li class="list"><div><span class="index">Id</span><span>User</span></div><span>Score</span></li>
         </ul>
       </div>
-      <form class="add-score" action="">
+      <form class="add-score" id="form">
         <h3>Add your score</h3>
-        <input class="border" type="text" placeholder="Your Name">
-        <input class="border" type="text" placeholder="Your Score">
-        <button class="btn  border" type="submit">Submit</button>
+        <input id="name" class="border" type="text" placeholder="Your Name" required>
+        <input id="score" class="border" type="number" placeholder="Your Score" required>
+        <button id="submit" class="btn  border" type="submit">Submit</button>
       </form>
     </section>
   </body>

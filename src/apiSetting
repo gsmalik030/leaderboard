@@ -1,0 +1,45 @@
+const api =
+  "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/YVDIYT67Y/scores";
+  const scoreList = document.getElementById('score-list');
+
+  const order = (Arr)=>{
+    Arr.sort((e1, e2)=> e2.score - e1.score);
+}
+
+const getData = async () => {
+    const response = await fetch(api);
+    const data = await response.json();
+    return data;
+  };
+const postData = async (e) => {
+    e.preventDefault();
+  const input = document.querySelectorAll("input");
+  const userData = { user: input[0].value, score: input[1].value };
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+
+    body: JSON.stringify(userData),
+  };
+  const response = fetch(api, options);
+  const data = (await response).json;
+  input[0].value = '';
+  input[1].value = '';
+  refreshList();
+  return data;
+};
+
+const refreshList = async () => {
+    const scoreData = await getData();
+    order(scoreData.result);
+    let display = "";
+    scoreData.result.forEach((data, id) => {
+      display += `<li class="list">
+      <div><span class="index">${id+1}</span><span>${data.user}</span></div>
+      <span>${data.score}</span></li>`;
+      scoreList.innerHTML=display;
+    });
+  };
+export { postData, getData, order,refreshList };

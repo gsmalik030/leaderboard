@@ -56,3 +56,13 @@ button {
 .even-list {
   background-color: #ddd;
 }
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.index {
+  margin-right: 1rem;
+}
