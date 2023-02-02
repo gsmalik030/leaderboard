@@ -3,7 +3,7 @@ import {
   refreshList, postData,
 } from './apiSetting';
 
-window.onload=refreshList();
+window.onload = refreshList();
 const form = document.getElementById('form');
 const refreshBtn = document.getElementById('refresh-btn');
 form.addEventListener('submit', postData);

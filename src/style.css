@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   background: radial-gradient(circle, #a6b8d4, #57cdf2, #00e1df, #00ed95, #a8eb12);
 }
 
@@ -67,27 +67,28 @@ ul {
 }
 
 .list:nth-child(odd) {
-  background-color: #FFF200;
+  background-color: #fff200;
 }
+
 .list:nth-child(even) {
-  background-color: #EA3FF7;
+  background-color: #ea3ff7;
 }
 
 .index {
   margin-right: 1rem;
 }
 
-input{
+input {
   font-size: 1.8rem;
   outline: none;
 }
 
-.score{
+.score {
   margin-left: 3rem;
 }
 
 @media screen and (min-width: 768px) {
-  .score{
+  .score {
     margin-left: 10rem;
   }
 }
