@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background: radial-gradient(circle, #a6b8d4, #57cdf2, #00e1df, #00ed95, #a8eb12);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +15,12 @@ html {
   display: flex;
   gap: 2rem;
   margin-bottom: 1.2rem;
+  align-items: center;
 }
 
 h1 {
   font-size: 3rem;
+  margin: 5rem;
 }
 
 h3 {
@@ -47,22 +53,42 @@ ul {
 
 .btn {
   width: 50%;
-}
-
-button {
-  padding: 1rem 1.5rem;
-}
-
-.even-list {
-  background-color: #ddd;
+  font-size: 1.5rem;
+  background-color: #a8eb12;
+  border-radius: 8px;
+  padding: 0.5rem;
 }
 
 .list {
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 2.2rem;
+}
+
+.list:nth-child(odd) {
+  background-color: #fff200;
+}
+
+.list:nth-child(even) {
+  background-color: #ea3ff7;
 }
 
 .index {
   margin-right: 1rem;
+}
+
+input {
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.score {
+  margin-left: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .score {
+    margin-left: 10rem;
+  }
 }
