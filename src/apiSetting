@@ -1,7 +1,7 @@
 const api =
   "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/YVDIYT67Y/scores";
   const scoreList = document.getElementById('score-list');
-
+  
   const order = (Arr)=>{
     Arr.sort((e1, e2)=> e2.score - e1.score);
 }
@@ -38,7 +38,7 @@ const refreshList = async () => {
     scoreData.result.forEach((data, id) => {
       display += `<li class="list">
       <div><span class="index">${id+1}</span><span>${data.user}</span></div>
-      <span>${data.score}</span></li>`;
+      <span class="score">${data.score}</span></li>`;
       scoreList.innerHTML=display;
     });
   };
